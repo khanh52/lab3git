@@ -1,0 +1,19 @@
+Đay la doan demo code de pull tu remote kho chua ve
+
+private final theloai tl = new theloai();
+private final phim p = new phim();
+private DefaultTableModel tablemodel = new DefaultTableModel();
+
+public final showdulieu() throw SQLexpection{
+    reSultSet rs = p.showdulieu();
+    while(rs.next())
+    {
+       String rows[] = new String(5);
+       rows[0] = rs.getString(1);
+       rows[1] = rs.getString(2);
+       rows[2] = rs.getString(3);
+       rows[3] = rs.getString(4);
+       rows[4] = rs.getString(5);
+       tablemodel.addRows(rows);
+    }
+{
